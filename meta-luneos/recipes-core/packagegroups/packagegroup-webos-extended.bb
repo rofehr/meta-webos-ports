@@ -81,6 +81,8 @@ RDEPENDS_${PN} = " \
     bootd \
     configurator \
     ${WEBOS_PACKAGESET_ENYO_1} \
+    event-monitor \
+    event-monitor-network \
     filecache \
     ${VIRTUAL-RUNTIME_librdx} \
     ${VIRTUAL-RUNTIME_novacomd} \
