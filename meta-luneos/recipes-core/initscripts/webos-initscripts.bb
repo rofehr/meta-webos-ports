@@ -20,7 +20,7 @@ inherit webos_cmake
 inherit webos_ports_fork_repo
 inherit systemd
 
-WEBOS_GIT_PARAM_BRANCH = "webOS-ports/webOS-OSE"
+WEBOS_GIT_PARAM_BRANCH = "herrie/OSE2"
 SRC_URI = "${WEBOS_PORTS_GIT_REPO_COMPLETE}"
 
 SYSTEMD_PACKAGES = "${PN}"
