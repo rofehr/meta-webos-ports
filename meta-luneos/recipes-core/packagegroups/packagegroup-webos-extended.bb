@@ -77,6 +77,7 @@ WEBOS_PACKAGESET_UI = " \
 
 RDEPENDS_${PN} = " \
     activitymanager \
+    appinstalld2 \
     bootd \
     configurator \
     ${WEBOS_PACKAGESET_ENYO_1} \
