@@ -79,6 +79,7 @@ RDEPENDS_${PN} = " \
     activitymanager \
     appinstalld2 \
     bootd \
+    com.webos.service.ai \
     configurator \
     ${WEBOS_PACKAGESET_ENYO_1} \
     event-monitor \
