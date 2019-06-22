@@ -80,6 +80,7 @@ RDEPENDS_${PN} = " \
     appinstalld2 \
     bootd \
     com.webos.service.ai \
+    com.webos.service.tts \
     configurator \
     ${WEBOS_PACKAGESET_ENYO_1} \
     event-monitor \
