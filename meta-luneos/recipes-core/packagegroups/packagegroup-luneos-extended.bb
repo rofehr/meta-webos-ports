@@ -92,7 +92,7 @@ RDEPENDS_${PN} = " \
   \
   webos-systemd-services \
   \
-  audio-service \
+  audiod \
   keymanager \
   mediaindexer \
   media-permission-service \
