@@ -9,7 +9,8 @@ LIC_FILES_CHKSUM = "file://${COMMON_LICENSE_DIR}/Apache-2.0;md5=89aea4e17d99a7ca
 PACKAGE_ARCH = "${MACHINE_ARCH}"
 inherit packagegroup
 
-VIRTUAL-RUNTIME_webappmanager ?= "luna-webappmanager"
+#VIRTUAL-RUNTIME_webappmanager ?= "luna-webappmanager"
+VIRTUAL-RUNTIME_webappmanager ?= "wam"
 VIRTUAL-RUNTIME_initscripts ?= "initscripts"
 VIRTUAL-RUNTIME_librdx ?= "rdxd"
 VIRTUAL-RUNTIME_webos-compositor ?= "luna-next"
