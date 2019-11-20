@@ -14,7 +14,7 @@ PR = "r4"
 PV = "1.0.0-42"
 SRCREV = "b2d6fdbd2562118de5211b706103be5faac40e07"
 
-#inherit webos_qmake5
+inherit webos_qmake5
 #inherit webos_enhanced_submissions
 inherit webos_public_repo
 
