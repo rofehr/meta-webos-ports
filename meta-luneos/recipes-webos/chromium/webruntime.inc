@@ -36,7 +36,7 @@ WEBOS_GIT_BRANCH_V8 ?= ";branch=${WEBOS_GIT_PARAM_BRANCH_V8}"
 WEBOS_REPO_NAME_V8 ?= "v8"
 
 SRC_URI = "\
-    ${WEBOSOSE_GIT_REPO_COMPLETE};name=main \
+    git://github.com/herrie82/chromium68.git;name=main \
     ${WEBOSOSE_GIT_REPO}/${WEBOS_REPO_NAME_V8};destsuffix=git/src/v8${WEBOS_GIT_BRANCH_V8};name=v8${WEBOSOSE_GIT_PROTOCOL} \
 "
 
@@ -72,7 +72,7 @@ WEBOS_SYSTEM_BUS_MANIFEST_TYPE = "PASS"
 
 PACKAGECONFIG ?= "jumbo neva-media"
 PACKAGECONFIG_append = " libpci"
-PACKAGECONFIG_append_hardware = " gstreamer umediaserver"
+# PACKAGECONFIG_append_hardware = " gstreamer umediaserver"
 PACKAGECONFIG[gstreamer] = "use_gst_media=true enable_webm_video_codecs=false,use_gst_media=false,g-media-pipeline"
 PACKAGECONFIG[umediaserver] = ",,umediaserver"
 # Options to enable debug build. Add this PACKAGECONFIG to webos-local.conf to enable debug build
