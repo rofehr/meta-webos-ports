@@ -21,7 +21,7 @@ RDEPENDS_${PN} += "${VIRTUAL-RUNTIME_cpushareholder}"
 
 #WEBOS_VERSION = "1.0.1-22_d311b9eebde64e48a494be910be2eeb9cec799cc"
 PV = "1.0.1-22"
-SRCREV = "1696b313b7efb39b64a98c2a4cb82115552bc68f"
+SRCREV = "03050d7861e82bc608d62cda49787c5de94273b9"
 PR = "r30"
 
 #inherit pkgconfig
