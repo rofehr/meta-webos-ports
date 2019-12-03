@@ -21,19 +21,22 @@ RDEPENDS_${PN} += "${VIRTUAL-RUNTIME_cpushareholder}"
 
 #WEBOS_VERSION = "1.0.1-22_d311b9eebde64e48a494be910be2eeb9cec799cc"
 PV = "1.0.1-22"
-SRCREV = "acd427799094749ec7abbcf7660aecd13cc44744"
+SRCREV = "416f0faf95597d792bc6876e8906a23c3da59550"
 PR = "r30"
 
 #inherit pkgconfig
 #inherit webos_enhanced_submissions
 inherit webos_system_bus
 #inherit webos_machine_dep
+inherit systemd
 inherit webos_qmake5
 inherit webos_lttng
 #inherit webos_distro_variant_dep
 #inherit webos_distro_dep
 inherit webos_ports_repo
 
+SYSTEMD_PACKAGES = "${PN}"
+SYSTEMD_SERVICE_${PN} = "webapp-mgr.service"
 
 WAM_DATA_DIR = "${webos_execstatedir}/${BPN}"
 
