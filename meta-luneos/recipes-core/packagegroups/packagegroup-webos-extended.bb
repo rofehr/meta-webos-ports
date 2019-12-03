@@ -23,6 +23,13 @@ VIRTUAL-RUNTIME_novacomd ?= "novacomd"
 # to change this variable in .bbappend together with bump.
 #
 
+WEBOS_PACKAGESET_TESTAPPS = " \
+    bareapp \
+    com.webos.app.test.enact \
+    com.webos.app.test.webosose \
+    com.webos.app.test.youtube \
+"
+
 # Enyo 1 and related framework packages
 WEBOS_PACKAGESET_ENYO_1 = " \
     enyo-1.0 \
@@ -104,6 +111,7 @@ RDEPENDS_${PN} = " \
     ${WEBOS_FOSS_MISSING_FROM_RDEPENDS} \
     ${WEBOS_PACKAGESET_SYSTEMAPPS} \
     ${WEBOS_PACKAGESET_UI} \
+    ${WEBOS_PACKAGESET_TESTAPPS} \
 "
 
 # XXX These FOSS components must be explicitly added because they are missing
