@@ -126,6 +126,7 @@ GN_ARGS = "\
     use_sysroot=false\
     use_system_debugger_abort=true\
     use_webos_v8_snapshot=true\
+    v8_use_snapshot=false \
     use_xkbcommon=true\
     ${WAM_DEMO_CONFARGS}\
     ${PACKAGECONFIG_CONFARGS}\
@@ -312,7 +313,7 @@ install_app_shell() {
     chmod -v 755 ${A_DIR}/run_app_shell
 }
 
-install_app_shell_append_webos() {
+install_app_shell_append() {
     install_ls2_roles_acg ${APP_SHELL_RUNTIME}
 }
 
